@@ -2,8 +2,8 @@
 <!doctype html>
 <html>
   <head>
-    <title>Подобрать телефон по параметрам<?php  echo $cp;?></title>
-    <meta name="description" content="Подбор телефона или смартфона по параметрам из множества моделей и от ведущих производителей.<?php  echo $cp;?>">
+    <title>Подобрать телефон по параметрам<?= $cp; ?></title>
+    <meta name="description" content="Подбор телефона или смартфона по параметрам из множества моделей и от ведущих производителей.<?= $cp; ?>">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="/Styles.css" type="text/css">
     <link rel="shortcut icon" href="/Images/mc.ico">
@@ -32,7 +32,7 @@
           <td class="filter_conttd">
             <div class="content" style="min-height:2000px">
               <article>
-                <h1 class="hed">Результат подбора по параметрам<?php  echo $cp;?></h1>
+                <h1 class="hed">Результат подбора по параметрам<?= $cp; ?></h1>
                 <div class="tdiv">
                   &nbsp;&nbsp;&nbsp;Ниже представлен результат подбора мобильных устройств по параметрам.
                     Для выполнения нового подбора, задайте критерии подбора в форме слево и нажмите подобрать
