@@ -41,7 +41,7 @@
                   &nbsp;&nbsp;&nbsp;Ниже представлен результат подбора мобильных устройств по параметрам.
                     Для выполнения нового подбора, задайте критерии подбора в форме слево и нажмите подобрать
                 </div>
-<?
+<?php
  if ($cur_page > 0) {
      $lim = ($cur_page-1)*20;
  } else {
@@ -333,7 +333,7 @@
                                         <a href="/compare" onclick="clr()" class="tab_rf">Сравнить</a>
                                       </td>
                                       <td class="k_cmp">
-<?
+<?php
                                         if ($_COOKIE['compare'] != '' && $clear_cook != 1) {
                                             $cook = explode(",", $_COOKIE['compare']);
                                         }
@@ -362,7 +362,7 @@
                                   <table class="ktab">
                                     <tr>
                                       <td class="card_img">
-<?
+<?php
                                         $img_path = '/Images/Prod_Img/Small/'; /* фото */
                                         $n = 0; /* количество дополнительных фото (мах=4) */
                                         for ($k = 1; $k <= 4; $k++) {
