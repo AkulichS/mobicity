@@ -171,7 +171,7 @@
          mysqli_free_result($tmp); /* освобождаем память */
      } else $news = 0;
 
-     if($region['cnt']>0){   /* определяем валюту */
+     if ($region['cnt'] > 0) {   /* определяем валюту */
          switch ($region['cnt']) {
              case 1:
                  $curr = ' AND s.currency=4';
@@ -338,7 +338,7 @@
                                             $cook = explode(",", $_COOKIE['compare']);
                                         }
                                         if ($cook) {
-                                            if(in_array($mas[$i]['id'], $cook)) {
+                                            if (in_array($mas[$i]['id'], $cook)) {
                                                 $checked = 'checked';
                                             } else {
                                                 $checked='';
@@ -367,7 +367,7 @@
                                         $n = 0; /* количество дополнительных фото (мах=4) */
                                         for ($k = 1; $k <= 4; $k++) {
                                             $src = @substr('Images/Prod_Img/'.$mas[$i]['foto'],0,-4).'_v'.$k.substr('Images/Prod_Img/'.$mas[$i]['foto'],-4);
-                                            if(file_exists($src)) $n++;
+                                            if (file_exists($src)) $n++;
                                         }
 ?>
                                         <img title="Увеличить" class="kimg" alt="<?= $mas[$i]['name']; ?>" src="<?= $img_path.$mas[$i]['foto'] ?>"
@@ -461,7 +461,7 @@
                                         for ($j = 0; $j < $rw; $j++) {
                                             if ($mas[$i]['id'] == $shop[$j]['pid']) {
                                                 $find++;
-                                                if($find<=5){
+                                                if ($find <= 5) {
 ?>
                                                     <div class="cust">
    	                                                  <div class="cnam">
@@ -668,7 +668,7 @@
 <?php
                 /*** Предложения магазинов ***/
                 $r = @count($plist);
-                if($r1 > 0){ /* если данные найдены */   /* временно установлена заглушка $r1, чтобы отражались предложения mobiguru, т.к. они пока более выгодны */
+                if ($r1 > 0) { /* если данные найдены */   /* временно установлена заглушка $r1, чтобы отражались предложения mobiguru, т.к. они пока более выгодны */
                     rsort($plist); /* сортировка по убыванию ставки */
                     for ($i = 0; $i < $r; $i++) {
                         $j = $plist[$i]['num'];
